@@ -1,17 +1,53 @@
 picture {
     width:100% }
 
-body{
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    max-width: 60;
+}
+
+
+li{
+    display: inline;
 }
 
 nav{
-    text-align: left;
+    font-family:'Raleway', sans-serif;
+    display: flex;
 }
+
+ul{
+    display: flex;
+    list-style-type: none;
+    margin: 1rem;
+    padding: 1rem;
+    overflow: auto;
+    background-color: #eec4a9f3;
+    font-size: 30px;
+}
+
+a{
+    display: inline;
+   text-decoration: none;
+   color: black;
+   font-family: 'Raleway', sans-serif;
+   padding: 2rem;
+}
+
+a:visited{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    text-decoration: none;
+    text-decoration-color: #e1eff0;
+}
+
 .overlay {
     position: absolute;
     top: 0;
@@ -19,6 +55,7 @@ nav{
     right: 0;
     bottom: 0;
  }
+
 
 .hero-text {
     text-align: center;
@@ -46,11 +83,11 @@ h2{
 
 h3{
     font-family: 'Euphoria Script', cursive;
-    color: #507882
+    color: #507882;
 }
 
 a:hover{
-    color: #edd7c8;
+    color: #507882;
 }
 
 .button{
@@ -68,12 +105,6 @@ a:hover{
     color: black;
     transition: 0.2s;
     cursor: pointer;
-}
-
-main{
-    margin: 0 auto;
-    padding: 0 1rem;
-    max-width: 50rem;
 }
 
 
@@ -109,7 +140,7 @@ img {
  }
  
  .card {
-    margin: 3rem .75rem;
+    margin: 1rem 1rem 1rem;
     position: relative;
     flex: 20%;
  }
@@ -160,6 +191,10 @@ img {
     font-size: 30px;
     }
 
+aside{
+    background-color: #f0e9df;
+}
+
 @media (min-width: 500px) {
         .cards {
           flex-direction: row;
@@ -167,11 +202,11 @@ img {
         }
       
         .cards .card {
-          flex: 1 1 1 20%;
+          flex: 1 1 40%;
         }
       }
     
- @media (min-width: 850px) {
+ @media (min-width: 1100px) {
         .cards {
           flex-wrap: nowrap;
         }
